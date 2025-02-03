@@ -48,3 +48,14 @@ SELECT * FROM public.empresasfct ORDER BY fechacontacto
 Resultado de la ejecución:
 
 ![img3](./assets/3.png)
+
+## `Apartado 4`
+
+Sentencia SQL:
+```
+select name from res_partner where city='Tracy' and is_company=False order by commercial_company_name
+```
+
+Resultado de la ejecución:
+
+![img4](./assets/4.png)
