@@ -59,3 +59,14 @@ select name from res_partner where city='Tracy' and is_company=False order by co
 Resultado de la ejecución:
 
 ![img4](./assets/4.png)
+
+## `Apartado 5`
+
+Sentencia SQL:
+```
+select distinct invoice_partner_display_name, name, invoice_date, amount_untaxed from account_move where move_type='in_refund' order by invoice_date DESC
+```
+
+Resultado de la ejecución:
+
+![img5](./assets/5.png)
