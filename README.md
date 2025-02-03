@@ -70,3 +70,19 @@ select distinct invoice_partner_display_name, name, invoice_date, amount_untaxed
 Resultado de la ejecución:
 
 ![img5](./assets/5.png)
+
+## `Apartado 6`
+
+Sentencia SQL:
+```
+SELECT invoice_partner_display_name, count(distinct name), sum(distinct amount_untaxed) 
+FROM account_move
+WHERE move_type = 'out_invoice' and state = 'posted'
+GROUP BY invoice_partner_display_name
+HAVING COUNT(DISTINCT name) > 2
+ORDER BY SUM(amount_untaxed) DESC;
+```
+
+Resultado de la ejecución:
+
+![img6](./assets/6.png)
