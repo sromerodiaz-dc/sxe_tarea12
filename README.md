@@ -86,3 +86,15 @@ ORDER BY SUM(amount_untaxed) DESC;
 Resultado de la ejecución:
 
 ![img6](./assets/6.png)
+
+## `Apartado 7`
+
+Sentencia SQL:
+```
+UPDATE res_partner SET email = replace(email, '@bilbao.example.com', '@bilbao.bizkaia.eus') WHERE email like '%@bilbao.example.com';
+```
+
+Ejecución de la sentencia:
+
+![img7](./assets/7.png)
+
