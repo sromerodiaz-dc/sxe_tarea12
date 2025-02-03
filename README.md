@@ -37,3 +37,14 @@ VALUES
 Ejecución:
 
 ![img2](./assets/21.png)
+
+## `Apartado 3`
+
+Sentencia SQL:
+```
+SELECT * FROM public.empresasfct ORDER BY fechacontacto 
+```
+
+Resultado de la ejecución:
+
+![img3](./assets/3.png)
