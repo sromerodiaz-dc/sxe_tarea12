@@ -98,3 +98,23 @@ Ejecución de la sentencia:
 
 ![img7](./assets/7.png)
 
+## `Apartado 8`
+
+Antes del borrado de los contactos (localhost:8069 >> Contactos):
+
+![img8](./assets/8.png)
+
+Sentencia SQL de eliminación de contactos:
+```
+DELETE FROM res_partner
+WHERE commercial_company_name = 'Ready Mat' 
+AND is_company = FALSE;
+```
+
+Ejecución de la sentencia:
+
+![img8](./assets/82.png)
+
+Resultado a través de **Odoo/Contactos**:
+
+![img8](./assets/83.png)
